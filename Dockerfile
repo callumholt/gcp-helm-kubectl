@@ -5,7 +5,7 @@ ENV KUBE_VERSION="v1.17.3"
 
 RUN apk add --no-cache \
     ca-certificates \
-    openssh \
+    openssh-client-default \
     git \
     curl && \
     wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBE_VERSION}/bin/linux/amd64/kubectl \
